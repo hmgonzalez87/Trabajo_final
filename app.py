@@ -13,7 +13,7 @@ st.set_page_config(
 # =======================================================
 # CARGA DE DATOS
 # =======================================================
-df = pd.read_csv("dat/ocupacion_ciudades.csv", sep=",", encoding="utf-8")
+df = pd.read_csv("ocupacion_ciudades.csv", sep=",", encoding="utf-8")
 df["Tasa_ocupacion"] = df["Plazas_ocupadas"] / df["Plazas_oferta"]
 df["Ingreso_medio_plaza"] = df["Ingresos_generados"] / df["Plazas_ocupadas"]
 df["REVPAR"] = df["Ingresos_generados"] / df["Plazas_oferta"]
